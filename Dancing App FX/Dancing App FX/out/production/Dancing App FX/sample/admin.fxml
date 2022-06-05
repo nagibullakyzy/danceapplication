@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+    <children>
+        <Button fx:id="delus_button" layoutX="64.0" layoutY="358.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="162.0" text="Delete users">
+         <font>
+            <Font name="Lucida Bright" size="15.0" />
+         </font></Button>
+        <Button fx:id="exit_button" layoutX="312.0" layoutY="435.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Exit">
+         <font>
+            <Font name="Lucida Bright" size="15.0" />
+         </font></Button>
+      <Button fx:id="edus_button" layoutX="302.0" layoutY="358.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="162.0" text="Edit users">
+         <font>
+            <Font name="Lucida Bright" size="15.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="21.0" layoutY="22.0" prefHeight="262.0" prefWidth="759.0">
+        <columns>
+          <TableColumn fx:id="id_c" prefWidth="56.0" text="id" />
+          <TableColumn fx:id="role_c" prefWidth="91.0" text="role" />
+            <TableColumn fx:id="name_c" prefWidth="107.0" text="name" />
+            <TableColumn fx:id="login_c" prefWidth="106.0" text="login" />
+            <TableColumn fx:id="password_c" prefWidth="104.0" text="password" />
+            <TableColumn fx:id="tel_c" prefWidth="157.0" text="phone number" />
+            <TableColumn fx:id="card_c" prefWidth="137.0" text="card" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" alignment="CENTER" layoutX="9.0" layoutY="307.0" prefHeight="40.0" prefWidth="272.0" text="You must choose a user!" textFill="#f8f8f8">
+         <font>
+            <Font name="Juice ITC" size="29.0" />
+         </font></Label>
+      <Button fx:id="AddDance_button" layoutX="551.0" layoutY="358.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="162.0" text="Add Dance">
+         <font>
+            <Font name="Lucida Bright" size="15.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
